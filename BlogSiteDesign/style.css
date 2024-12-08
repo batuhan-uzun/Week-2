@@ -1,0 +1,102 @@
+/* Genel Ayarlar */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Ana İçerik */
+main {
+    display: flex;
+    justify-content: center;
+    padding: 2em 1em;
+}
+
+section h2 {
+    text-align: center;
+    color: #333;
+}
+
+.posts {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+article {
+    max-width: 300px; /* Ana Sayfa gönderileri ile aynı genişlik */
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    text-align: center;
+}
+
+article img {
+    width: 100%; /* Resim genişliği Ana Sayfa ile aynı */
+    height: auto; /* Oranı koruyarak yeniden boyutlandır */
+    border-radius: 5px;
+}
+
+article h3 {
+    color: #333;
+    margin: 0.5em 0;
+}
+
+article p {
+    color: #666;
+    margin-bottom: 0.5em;
+}
+
+article a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: auto;
+}
