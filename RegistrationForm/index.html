@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Survey Form For Registration</h1>
+        <p id="description">Please fill out the form below to sign up for our service.</p>
+
+        <form id="survey-form">
+            <!-- Name Input -->
+            <label id="name-label" for="name">Full Name</label>
+            <input id="name" type="text" placeholder="Enter your name" required>
+
+            <!-- Email Input -->
+            <label id="email-label" for="email">Email</label>
+            <input id="email" type="email" placeholder="Enter your email" required>
+
+            <!-- Number Input -->
+            <label id="number-label" for="number">Age</label>
+            <input id="number" type="number" placeholder="Enter your age" min="1" max="120" required>
+
+            <!-- Dropdown -->
+            <label for="dropdown">Select Gender</label>
+            <select id="dropdown" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <!-- Radio Buttons -->
+            <p>Where did you hear about us?</p>
+            <label>
+                <input type="radio" name="source" value="instagram" required> Instagram
+            </label>
+            <label>
+                <input type="radio" name="source" value="linkedin" required> LinkedIn
+            </label>
+
+            <!-- Checkboxes -->
+            <label>
+                <input type="checkbox" value="terms" required> I agree to the Terms of Service
+            </label>
+            <label>
+                <input type="checkbox" value="subscribe"> Subscribe for news
+            </label>
+
+            <!-- Textarea -->
+            <label for="comments">Suggestions</label>
+            <textarea id="comments" placeholder="Leave a comment..." rows="4"></textarea>
+
+            <!-- Submit Button -->
+            <input id="submit" type="submit" value="Sign Up">
+        </form>
+    </div>
+</body>
+</html>

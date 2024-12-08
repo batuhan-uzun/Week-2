@@ -1,0 +1,117 @@
+/* Genel Ayarlar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container */
+.container {
+    background-color: #002244;
+    padding: 1.5em; /* Daha az padding */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 320px; /* Form genişliği küçültüldü */
+    text-align: center;
+}
+
+/* Title and Description */
+#title {
+    font-size: 1.5em; /* Başlık boyutu küçültüldü */
+    margin-bottom: 0.5em;
+}
+
+#description {
+    font-size: 0.9em; /* Açıklama metni boyutu küçültüldü */
+    margin-bottom: 1.2em;
+}
+
+/* Form Labels and Inputs */
+label {
+    display: block;
+    margin: 0.6em 0 0.4em; /* Daha az boşluk */
+    font-size: 0.9em; /* Etiket boyutu küçültüldü */
+    text-align: left;
+    color: #dcdcdc;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.6em; /* Giriş alanı içi küçültüldü */
+    margin-bottom: 0.8em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.9em; /* Giriş alanı metin boyutu küçültüldü */
+    color: #333;
+    background: #fff;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #007BFF;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 0.6em; /* Daha küçük buton boyutu */
+    font-size: 0.9em; /* Buton yazı boyutu küçültüldü */
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Radio Buttons and Checkboxes */
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 0.5em;
+}
+
+p {
+    margin-top: 0.8em;
+    font-size: 0.9em;
+    text-align: left;
+    color: #dcdcdc;
+}
+
+/* Textarea */
+textarea {
+    resize: none;
+    font-family: Arial, sans-serif;
+    font-size: 0.9em; /* Metin alanı boyutu küçültüldü */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    #title {
+        font-size: 1.3em;
+    }
+
+    #description {
+        font-size: 0.8em;
+    }
+
+    input, select, textarea, input[type="submit"] {
+        font-size: 0.8em;
+        padding: 0.5em;
+    }
+}
